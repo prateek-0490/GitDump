@@ -25,5 +25,5 @@ echo "Keywords Detected" >> result.txt
 echo "=================" >> result.txt
 touch result.txt
 for word in "${keywords[@]}"; do
-	git grep "$word" >> result.txt
+	git grep "$word" | grep -v $1 >> result.txt
 done
