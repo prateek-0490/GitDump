@@ -5,6 +5,7 @@
 
 keywords=(
 	"password"
+	"credentials"
 	"key"
 	"passwd"
 	"secret"
@@ -21,9 +22,14 @@ keywords=(
 )
 
 echo
-echo "Keywords Detected" >> result.txt
-echo "=================" >> result.txt
 touch result.txt
+echo "Usage : ./gitDump.sh [ignore-case]" >> result.txt
+echo "=================" >> result.txt
 for word in "${keywords[@]}"; do
-	git grep "$word" | grep -v $1 >> result.txt
+	if [ -z "$1" ]
+		then 
+			git grep "$word" >> result.txt
+	else
+		git grep "$word" | grep -v $1 >> result.txt
+	fi
 done
