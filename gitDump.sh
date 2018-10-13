@@ -19,6 +19,23 @@ keywords=(
 	"login"
 	"github_token"
 	"API_key"
+	"secret"
+	"account"
+	"mlab"
+	"db_username"
+	"db_password"
+	"ssh-rsa"
+	"auth"
+	"creds"
+	"api_key"
+	"aws"
+	"-----BEGIN RSA PRIVATE KEY-----"
+	"-----BEGIN OPENSSH PRIVATE KEY-----"
+	"-----BEGIN DSA PRIVATE KEY-----"
+	"-----BEGIN EC PRIVATE KEY-----"
+	"-----BEGIN PGP PRIVATE KEY BLOCK-----"
+	"https://hooks.slack.com/services/"
+	"client_secret"
 )
 
 echo
