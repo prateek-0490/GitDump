@@ -36,6 +36,7 @@ keywords=(
 	"-----BEGIN PGP PRIVATE KEY BLOCK-----"
 	"https://hooks.slack.com/services/"
 	"client_secret"
+	"CELERY_BROKER_URL"
 )
 
 echo
